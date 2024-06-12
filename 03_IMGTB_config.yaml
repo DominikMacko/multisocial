@@ -1,0 +1,40 @@
+---
+global: 
+  interactive: false
+  name: results_log
+
+data:
+  global:
+    filetype: csv
+  list:
+  - filepath: ../dataset/multisocial_clean.csv.gz
+    test_size: 1
+
+methods:
+  global:
+    base_model_name: EleutherAI/gpt-j-6b
+    mask_filling_model_name: t5-large
+    DEVICE: cuda
+    cache_dir: ../cache/
+    model_output_machine_label: 1
+  list:
+  #pre-trained detectors
+  - name: openai-community/roberta-large-openai-detector
+    model_output_machine_label: 0
+  - name: andreas122001/bloomz-3b-mixed-detector
+    bnb_quantization_config:
+      load_in_4bit: True
+  - name: orzhan/ruroberta-ruatd-binary
+  - name: Hello-SimpleAI/chatgpt-detector-roberta-chinese
+  - name: nealcly/detection-longformer #needs special preprocessing steps, unused for a fair comparison
+    model_output_machine_label: 0
+  #statistical detectors
+  - name: FastDetectGPTMetric
+  - name: BinocularsMetric
+    threshold: 0.9015310749276843
+  - name: DetectLLM_LLR
+  - name: s5Metric #+ LLM-Deviation is one of the metrics - extracted and separated in the results analysis
+analysis:
+  - name: none
+  
+...
