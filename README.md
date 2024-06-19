@@ -21,5 +21,7 @@ Download the human texts from the existing datasets, described in the paper.
 | 02b | A script for automated text-similarity metrics calculation. |
 | 02c | A script for combination of the generated texts from different models. |
 | 02d | A script for pre-processing (filtering) for the experiments. |
-| 03 | A configuration file to run external [IMGTB framework](https://github.com/kinit-sk/IMGTB). |
+| 03a | A configuration file to run external [IMGTB framework](https://github.com/kinit-sk/IMGTB). |
+| 03b | A text file to update environment requirements for fine-tuning process. |
+| 03c | A script for fine-tuning of detection models. |
 | 04 | Google Colab notebook for results analysis. |
