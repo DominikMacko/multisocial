@@ -1,5 +1,19 @@
 # MultiSocial: Multilingual Benchmark of Machine-Generated Text Detection of Social-Media Texts
-Source code for replication of the experiments in the paper submitted to ACL Rolling Review.
+Source code for replication of the experiments in the [paper](https://arxiv.org/abs/2406.12549) accepted to ACL 2025 Main conference.
+
+## Cite
+If you use the data, code, or the information in this repository, cite the following paper, please<!-- (also available on [arXiv](https://arxiv.org/abs/2406.12549))-->.
+```bibtex
+@misc{macko2024multisocialmultilingualbenchmarkmachinegenerated,
+      title={{MultiSocial}: Multilingual Benchmark of Machine-Generated Text Detection of Social-Media Texts}, 
+      author={Dominik Macko and Jakub Kopal and Robert Moro and Ivan Srba},
+      year={2024},
+      eprint={2406.12549},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2406.12549}, 
+}
+```
 
 ## Install Dependencies
 Install the [IMGTB framework](https://github.com/kinit-sk/IMGTB) along with its dependencies.
