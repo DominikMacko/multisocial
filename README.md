@@ -1,5 +1,5 @@
 # MultiSocial: Multilingual Benchmark of Machine-Generated Text Detection of Social-Media Texts
-Source code for replication of the experiments in the [paper](https://arxiv.org/abs/2406.12549) accepted to ACL 2025 Main conference.
+Source code for replication of the experiments in the [paper](https://arxiv.org/abs/2406.12549) accepted to ACL 2025 Main conference. The MultiSocial dataset can be downloaded from [Zenodo](https://zenodo.org/records/13846152).
 
 ## Cite
 If you use the data, code, or the information in this repository, cite the following paper, please<!-- (also available on [arXiv](https://arxiv.org/abs/2406.12549))-->.
@@ -19,7 +19,8 @@ If you use the data, code, or the information in this repository, cite the follo
 Install the [IMGTB framework](https://github.com/kinit-sk/IMGTB) along with its dependencies.
 
 ## Data Preparation
-Download the human texts from the existing datasets, described in the paper.
+The MultiSocial dataset can be directly downloaded from [Zenodo](https://zenodo.org/records/13846152) (continue directly with the step 3 of the experiments).
+For replication of dataset construction, download the human texts from the existing datasets, described in the paper.
 - [Gab](https://zenodo.org/records/1418347) - download the dataset and put it into "dataset/gab_posts_jan_2018.json.tar.gz"
 - [WhatsApp](https://github.com/gvrkiran/whatsapp-public-groups) - request the non-anonymised version of the dataset and put it into "dataset/non_anonymised_data_to_share.tsv.gz"
 - [Telegram](https://zenodo.org/records/3607497) - download the messages part of the dataset and put it into "dataset/messages.ndjson.zst"
